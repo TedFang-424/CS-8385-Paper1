@@ -1,0 +1,40 @@
+[
+    {
+        "description": "A function to calculate the factorial of a number using recursion.",
+        "test_cases": [
+            {
+                "input": 5,
+                "expected_output": 120
+            },
+            {
+                "input": 0,
+                "expected_output": 1
+            },
+            {
+                "input": 1,
+                "expected_output": 1
+            }
+        ],
+        "language": "Go",
+        "code": "package main\n\nfunc factorial(n int) int {\n    if n == 0 {\n        return 1\n    }\n    return n * factorial(n-1)\n}\n"
+    },
+    {
+        "description": "A function to check if a number is prime.",
+        "test_cases": [
+            {
+                "input": 7,
+                "expected_output": true
+            },
+            {
+                "input": 4,
+                "expected_output": false
+            },
+            {
+                "input": 2,
+                "expected_output": true
+            }
+        ],
+        "language": "Go",
+        "code": "package main\n\nfunc isPrime(n int) bool {\n    if n <= 1 {\n        return false\n    }\n    for i := 2; i*i <= n; i++ {\n        if n%i == 0 {\n            return false\n        }\n    }\n    return true\n}\n"
+    }
+]

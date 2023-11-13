@@ -1,0 +1,196 @@
+[
+    {
+        "description": "A function to calculate the factorial of a number using recursion.",
+        "language": "Python",
+        "code": "\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n",
+        "test_cases": [
+            {
+                "input": 5,
+                "expected_output": 120
+            },
+            {
+                "input": 3,
+                "expected_output": 6
+            },
+            {
+                "input": 1,
+                "expected_output": 1
+            },
+            {
+                "input": 0,
+                "expected_output": 1
+            }
+        ],
+        "lines": "10-20"
+    },
+    {
+        "description": "A function to check if a string is a palindrome.",
+        "language": "Python",
+        "code": "\ndef is_palindrome(s):\n    return s == s[::-1]\n",
+        "test_cases": [
+            {
+                "input": "radar",
+                "expected_output": true
+            },
+            {
+                "input": "hello",
+                "expected_output": false
+            },
+            {
+                "input": "level",
+                "expected_output": true
+            },
+            {
+                "input": "world",
+                "expected_output": false
+            }
+        ],
+        "lines": "10-20"
+    },
+    {
+        "description": "A simple bubble sort implementation.",
+        "language": "Python",
+        "code": "\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n",
+        "test_cases": [
+            {
+                "input": [
+                    64,
+                    34,
+                    25,
+                    12,
+                    22,
+                    11,
+                    90
+                ],
+                "expected_output": [
+                    11,
+                    12,
+                    22,
+                    25,
+                    34,
+                    64,
+                    90
+                ]
+            },
+            {
+                "input": [
+                    5,
+                    1,
+                    4,
+                    2,
+                    8
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    8
+                ]
+            },
+            {
+                "input": [
+                    3,
+                    2,
+                    1
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "input": [
+                    1
+                ],
+                "expected_output": [
+                    1
+                ]
+            }
+        ],
+        "lines": "10-20"
+    },
+    {
+        "description": "A function to merge two sorted lists into a single sorted list.",
+        "language": "Python",
+        "code": "\ndef merge_sorted_lists(l1, l2):\n    result = []\n    i = j = 0\n    while i < len(l1) and j < len(l2):\n        if l1[i] < l2[j]:\n            result.append(l1[i])\n            i += 1\n        else:\n            result.append(l2[j])\n            j += 1\n    result.extend(l1[i:] or l2[j:])\n    return result\n",
+        "test_cases": [
+            {
+                "input": [
+                    [
+                        1,
+                        3,
+                        5
+                    ],
+                    [
+                        2,
+                        4,
+                        6
+                    ]
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            },
+            {
+                "input": [
+                    [],
+                    [
+                        1,
+                        2,
+                        3
+                    ]
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "input": [
+                    [
+                        1,
+                        2,
+                        3
+                    ],
+                    []
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "input": [
+                    [
+                        1,
+                        2,
+                        3
+                    ],
+                    [
+                        4,
+                        5,
+                        6
+                    ]
+                ],
+                "expected_output": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        ],
+        "lines": "10-20"
+    }
+]

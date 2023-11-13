@@ -1,0 +1,266 @@
+[
+    {
+        "description": "A function to calculate the factorial of a number.",
+        "test_cases": [
+            {
+                "input": 5,
+                "expected_output": 120
+            },
+            {
+                "input": 0,
+                "expected_output": 1
+            },
+            {
+                "input": 1,
+                "expected_output": 1
+            },
+            {
+                "input": 3,
+                "expected_output": 6
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n"
+    },
+    {
+        "description": "A function to check if a string is a palindrome.",
+        "test_cases": [
+            {
+                "input": "racecar",
+                "expected_output": true
+            },
+            {
+                "input": "hello",
+                "expected_output": false
+            },
+            {
+                "input": "noon",
+                "expected_output": true
+            },
+            {
+                "input": "madam",
+                "expected_output": true
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "\ndef is_palindrome(s):\n    return s == s[::-1]\n"
+    },
+    {
+        "description": "Sample Python snippet 3",
+        "test_cases": [
+            {
+                "input": 8,
+                "expected_output": 50
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 4",
+        "test_cases": [
+            {
+                "input": 2,
+                "expected_output": 72
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 5",
+        "test_cases": [
+            {
+                "input": 2,
+                "expected_output": 10
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 6",
+        "test_cases": [
+            {
+                "input": 1,
+                "expected_output": 83
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 7",
+        "test_cases": [
+            {
+                "input": 3,
+                "expected_output": 12
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 8",
+        "test_cases": [
+            {
+                "input": 7,
+                "expected_output": 70
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 9",
+        "test_cases": [
+            {
+                "input": 8,
+                "expected_output": 100
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 10",
+        "test_cases": [
+            {
+                "input": 10,
+                "expected_output": 1
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 11",
+        "test_cases": [
+            {
+                "input": 5,
+                "expected_output": 100
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 12",
+        "test_cases": [
+            {
+                "input": 10,
+                "expected_output": 8
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 13",
+        "test_cases": [
+            {
+                "input": 3,
+                "expected_output": 97
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 14",
+        "test_cases": [
+            {
+                "input": 3,
+                "expected_output": 56
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 15",
+        "test_cases": [
+            {
+                "input": 8,
+                "expected_output": 86
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 16",
+        "test_cases": [
+            {
+                "input": 3,
+                "expected_output": 71
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 17",
+        "test_cases": [
+            {
+                "input": 4,
+                "expected_output": 62
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 18",
+        "test_cases": [
+            {
+                "input": 8,
+                "expected_output": 20
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 19",
+        "test_cases": [
+            {
+                "input": 4,
+                "expected_output": 59
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    },
+    {
+        "description": "Sample Python snippet 20",
+        "test_cases": [
+            {
+                "input": 10,
+                "expected_output": 15
+            }
+        ],
+        "language": "Python",
+        "complexity": "1",
+        "code": "print('Hello World')"
+    }
+]
